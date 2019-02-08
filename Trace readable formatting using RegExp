@@ -1,4 +1,5 @@
 In ultraedit "Replace" -> check the Regular Expression and Use "Perl".
+In Notepad++ "Replace" -> use "Regular Expression" and use below option.
 
 First Replace SQL then Peoplecode
 
