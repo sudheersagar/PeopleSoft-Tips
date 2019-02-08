@@ -1,0 +1,21 @@
+In ultraedit "Replace" -> check the Regular Expression and Use "Perl".
+
+First Replace SQL then Peoplecode
+
+RegEx Pattern for SQL: 
+
+Find: ^[a-z]{8}\.\d+ +\(\d+\) +\t +\d+-\d+ +\d{2}\.\d{2}\.\d{2} +\d+\.\d{6} Cur#\d+\.\d+\.[a-zA-Z0-9_]+ RC=\d+ Dur=\d+.\d{6}
+Replace: SQL---------------
+
+RegEx Pattern for PeopleCode: 
+
+Find: ^[a-z]{8}\.\d+ +\(\d+\) +\t +\d+-\d+ +\d{2}\.\d{2}\.\d{2} +\d+.\d{6}
+Replace: PeopleCode--------
+
+
+remove any redundant information and then remove blank lines.
+
+Replace Blank Lines:
+--------------------
+Find: ^(?:[\t ]*(?:\r?\n|\r))+
+Replace: 
