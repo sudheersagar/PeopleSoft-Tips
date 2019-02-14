@@ -6,3 +6,34 @@ Regular Express used to locate a United States Social Security Number is below:
 
 Valid Date formats (M/d/yyyy and MM/dd/yyyy):
 ^(0?[1-9]|1[0-2])/(0?[1-9]|1[0-9]|2[0-9]|3[01])/\d{4}$
+
+Search String Rules:
+--------------------
+•^ - matches start of line
+•$ - matches end of line
+•. - matches any single character
+•[abc] - matches single a or b or c
+•[^abc] - matches a character other than a or b or c
+•(ab|cd) - matches ab or cd
+•* - matches zero or any number of the previous character/expression
+•+ - matches one or more of the previous character/expression
+•? - matches zero or one of the previous character/expression
+•{3} - matches three of the previous character/expression
+•{3,} - matches at least three of the previous character/expression
+•{3,5} - matches between three and five of the previous character/expression
+•\n - matches New Line character
+•\t - matches Tab character
+•\f - matches Form Feed character
+•\r - matches Carriage Return character
+•\v - matches Vertical Tab character
+•\d - matches any digit
+•\D - matches a character other than a digit
+•\w - matches any letter, digit or underscore (_)
+•\W - matches a character other than a letter, digit or underscore (_)
+•\s - matches any white space
+•\S - matches a character other than a white space
+•\b - matches a word boundary
+•\B - matches a character other than a word boundary
+•\. - matches an actual dot (works for all meta characters - including \)
+•Other characters match with themselves
+
